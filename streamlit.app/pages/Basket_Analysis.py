@@ -6,7 +6,7 @@ from mlxtend.frequent_patterns import apriori, association_rules
 st.title("Market Basket Analysis")
 
 # Load data
-df = pd.read_csv("../data/cleaned/cleaned_orders.csv")
+df = pd.read_csv("data/cleaned/cleaned_orders.csv")
 basket_df = df[['order_id', 'product_name']].dropna()
 
 # Basket matrix
