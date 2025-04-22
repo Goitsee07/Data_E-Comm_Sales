@@ -1,147 +1,38 @@
-# E-commerce Sales Data Analysis & Dashboard
+# E-commerce Sales Analysis
 
-This project analyzes an e-commerce dataset to uncover insights about sales performance, customer behavior, product success, and marketing campaign effectiveness. It includes both an interactive **Streamlit web app** and a **PDF report** version for comprehensive portfolio presentation.
+An end-to-end data analytics project exploring e-commerce sales, customer behavior, product trends, and marketing performance. Built using **SQL**, **Python**, and **Streamlit**, with an optional Power BI/Looker Studio dashboard.
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Business Questions](#business-questions)
-- [Data Cleaning](#data-cleaning)
-- [Streamlit App](#streamlit-app)
-- [PDF Report](#pdf-report)
-- [Power BI Dashboard (Optional)](#power-bi-dashboard-optional)
-- [Technologies Used](#technologies-used)
-- [Key Insights](#key-insights)
+## Project Highlights
 
----
+- **Interactive Streamlit Dashboard**  
+  Visualizes sales trends, customer insights, product performance, and marketing metrics.  
+  → [Launch the app](https://goitsee07-data-e-comm-sales.streamlit.app)
 
-## Project Overview
+- **PDF Report**  
+  Includes SQL cleaning steps, key visualizations, and business insights.  
+  → [Download the full report](sandbox:/mnt/data/Full_Ecomm_Sales_Analysis_Report.pdf)
 
-This project explores customer and sales data from an e-commerce platform between January and June 2024. The goal is to support data-driven decisions in sales, marketing, and product development.
+- **Power BI Dataset**  
+  Ready-to-import CSV files for Power BI users in `/powerbi_dashboard`.
 
-## Business Questions
+## Business Questions Answered
 
-- How have monthly sales trended over the past 6 months?
+- How are monthly sales trending?
 - Who are our most valuable customers?
-- Which products are top performers?
-- What campaigns drive the most revenue?
+- What products perform best?
+- Which marketing campaigns drive the most revenue?
 
-## Data Cleaning
+## Tools Used
 
-Data was cleaned using SQL (simulated for this portfolio). Key steps:
-```sql
--- Remove nulls
-SELECT * FROM sales_data WHERE order_id IS NOT NULL AND product_id IS NOT NULL;
-
--- Extract month from order date
-SELECT order_date, EXTRACT(MONTH FROM order_date) AS month FROM sales_data;
-
--- Join customer types
-SELECT s.*, c.customer_type FROM sales_data s JOIN customers c ON s.customer_id = c.id;
-
+- Python (Pandas, Matplotlib, Seaborn)
+- SQL (for data cleaning & transformation)
+- Streamlit (dashboard)
+- Power BI / Looker Studio (optional)
+- FPDF (PDF reporting)
 
 ---
 
-Streamlit App
-
-A live interactive web dashboard built using Streamlit.
-
-Features:
-
-Filterable visual analytics for sales, customers, products, and marketing.
-
-Market Basket Analysis (Apriori).
-
-Forecasting (time series with statsmodels).
-
-
-Launch the App:
-
-> Streamlit Web App
-
-
-
-
----
-
-PDF Report
-
-For offline portfolio viewing, a fully visual PDF report is available.
-
-Highlights:
-
-Monthly sales trends
-
-Customer segmentation (LTV, new vs returning)
-
-Top product analysis
-
-Marketing campaign performance
-
-SQL snippets and recommendations
-
-
-Download: Full Report (PDF)
-
-
----
-
-Power BI Dashboard (Optional)
-
-If you prefer working with Power BI:
-
-Folder: /powerbi_dashboard/
-Includes:
-
-monthly_sales.csv
-
-customer_insights.csv
-
-product_performance.csv
-
-marketing_effectiveness.csv
-
-
-These files are ready for direct import into Power BI Desktop for creating visuals similar to the Streamlit app.
-
-
----
-
-Technologies Used
-
-Python (Pandas, Seaborn, Matplotlib)
-
-Streamlit for web dashboard
-
-Power BI / Looker Studio (optional visual layer)
-
-SQL for data querying
-
-FPDF for report generation
-
-
-
----
-
-Key Insights
-
-March and May had the highest sales volume.
-
-Returning customers generate 60%+ of revenue.
-
-Tier 1 customers show higher lifetime value.
-
-Spring Sale and Email marketing campaigns performed best.
-
-Product A and B lead in total sales.
-
-
-
----
-
-Author
-
-GitHub: Goitsee07 Portfolio Project by a Data Analyst focused on user behavior and digital marketing analytics.
-
----
+**Author:** [Goitsee07](https://github.com/Goitsee07)  
+*Data Analyst Portfolio Project*
 
 
