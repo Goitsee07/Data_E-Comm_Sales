@@ -11,7 +11,7 @@ df = pd.read_csv("data/cleaned/cleaned_orders.csv")
 df['order_date'] = pd.to_datetime(df['order_date'])
 
 # Prepare monthly sales
-monthly_sales = df.set_index('order_date').resample('M')['sales'].sum()
+monthly_sales = df.set_index('order_date').resample('ME')['sales'].sum()
 
 # Fit ARIMA model
 model = ARIMA(monthly_sales, order=(1, 1, 1))
