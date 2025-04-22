@@ -1,0 +1,21 @@
+Customer_ID,Type,Lifetime_Value,Location
+CUST_1,Returning,2176,Tier 2
+CUST_2,Returning,308,Tier 2
+CUST_3,Returning,1534,Tier 1
+CUST_4,Returning,1904,Tier 1
+CUST_5,Returning,802,Tier 2
+CUST_6,Returning,1249,Tier 1
+CUST_7,Returning,1454,Tier 1
+CUST_8,Returning,474,Tier 1
+CUST_9,Returning,2995,Tier 2
+CUST_10,Returning,2646,Tier 2
+CUST_11,Returning,1295,Tier 1
+CUST_12,Returning,1973,Tier 2
+CUST_13,New,892,Tier 2
+CUST_14,New,1260,Tier 1
+CUST_15,New,2188,Tier 2
+CUST_16,New,2368,Tier 3
+CUST_17,New,1310,Tier 1
+CUST_18,New,1094,Tier 3
+CUST_19,New,1834,Tier 2
+CUST_20,New,1698,Tier 2
