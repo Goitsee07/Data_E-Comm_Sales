@@ -4,3 +4,4 @@ seaborn
 statsmodels
 scikit-learn
 openpyxl
+mlxtend==0.23.1
