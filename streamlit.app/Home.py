@@ -15,7 +15,7 @@ st.markdown("""
 """)
 
 # Load data
-df = pd.read_csv("../data/cleaned/cleaned_orders.csv")
+df = pd.read_csv("data/cleaned/cleaned_orders.csv")
 df['order_date'] = pd.to_datetime(df['order_date'])
 
 # KPIs
